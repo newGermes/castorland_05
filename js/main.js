@@ -7,7 +7,8 @@ app.elm = {
     addToCart: document.querySelector('.add_to_cart'),
     sort: document.querySelector('#sort'),
     quantity: document.querySelector('#quantity'),
-    shoppingCart: document.querySelector('#shopping_cart .ajax_cart_quantity')
+    shoppingCart: document.querySelector('#shopping_cart .ajax_cart_quantity'),
+    observe: true
 };
 
 // adding a listener to buttons in Category
@@ -17,7 +18,15 @@ app.addToCart.delegation(app.elm.body, app.elm.addToCart);
 app.sortingData.setDataFrom(app.elm.sort, 'sort');
 app.sortingData.setDataFrom(app.elm.quantity, 'quantity');
 
-//save from delete app object
+//save from delete scope
 Object.preventExtensions(app);
 Object.seal(app);
 Object.freeze(app);
+
+var saveApp = app;
+setTimeout(function observe() {
+    if (!app.observe) {
+        app = saveApp;
+    }
+    setTimeout(observe, 17);
+}, 17);

@@ -1,5 +1,5 @@
 'use strict';
-app.tem = (function() {
+app.item = (function() {
     var render = function(data) {
         
     };
