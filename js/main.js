@@ -16,3 +16,8 @@ app.addToCart.delegation(app.elm.body, app.elm.addToCart);
 // get data attribute value
 app.sortingData.setDataFrom(app.elm.sort, 'sort');
 app.sortingData.setDataFrom(app.elm.quantity, 'quantity');
+
+//save from delete app object
+Object.preventExtensions(app);
+Object.seal(app);
+Object.freeze(app);
