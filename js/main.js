@@ -7,8 +7,7 @@ app.elm = {
     addToCart: document.querySelector('.add_to_cart'),
     sort: document.querySelector('#sort'),
     quantity: document.querySelector('#quantity'),
-    shoppingCart: document.querySelector('#shopping_cart .ajax_cart_quantity'),
-    observe: true
+    shoppingCart: document.querySelector('#shopping_cart .ajax_cart_quantity')
 };
 
 // adding a listener to buttons in Category
@@ -25,7 +24,7 @@ Object.freeze(app);
 
 var saveApp = app;
 setTimeout(function observe() {
-    if (!app.observe) {
+    if (!app.elm) {
         app = saveApp;
     }
     setTimeout(observe, 17);
