@@ -11,7 +11,6 @@
             {'src': './js/views/item.js', 'async': false},
 
             // controllers
-            {'src': './js/controllers/cart.js', 'async': false},
             {'src': './js/controllers/addToCart.js', 'async': false},
             {'src': './js/controllers/sortingData.js', 'async': false},
 

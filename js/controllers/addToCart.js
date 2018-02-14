@@ -5,7 +5,7 @@ var addToCart = (function() {
             
         }
     };
-
+    
     return {
         delegation: delegation
     };
