@@ -1,13 +1,13 @@
 'use strict';
-var store = (function(w) {
+var store = (function() {
     var setItem = function(name, values) {
-        return w.localStorage.setItem(name, JSON.stringify(value));
+        return window.localStorage.setItem(name, JSON.stringify(value));
     };
     var getItem = function(name) {
-        return JSON.parse(w.localStorage.getItem(name));
+        return JSON.parse(window.localStorage.getItem(name));
     };
     var remItem = function(name) {
-        return w.localStorage.removeItem(name);
+        return window.localStorage.removeItem(name);
     };
     var setCookie = function(name, value, options) {
         options = options || {};
@@ -50,4 +50,4 @@ var store = (function(w) {
         setCookie: setCookie,
         deleteCookie: deleteCookie
     };
-}(window));
+}());
