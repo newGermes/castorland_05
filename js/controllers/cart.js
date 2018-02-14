@@ -1,5 +1,4 @@
 'use strict';
-
 var Cart = (function() {
         var getString = function(parametr) {
                 return parametr;

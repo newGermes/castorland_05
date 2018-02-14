@@ -1,2 +1,9 @@
-// include Cart
-console.log(Cart.item);
+'use stirct';
+(function() {
+    var elm = {
+        body: document.body,
+        addToCart: document.querySelector('.add_to_cart')
+    };
+
+    
+}());

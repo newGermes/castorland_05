@@ -1,9 +1,20 @@
+'use strict';
 (function() {
     var src = {
         'scripts': [
             {'src': 'https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js', 'async': false},
-            {'src': './js/controllers/cart.js', 'async': false},
             
+            // models
+            {'src': './js/models/store.js', 'async': false},
+            
+            // views
+            {'src': './js/views/item.js', 'async': false},
+
+            // controllers
+            {'src': './js/controllers/cart.js', 'async': false},
+            {'src': './js/controllers/category.js', 'async': false},
+
+            // aggregator
             {'src': './js/main.js', 'async': false}
         ]
     };
