@@ -2,8 +2,9 @@
     var src = {
         'scripts': [
             {'src': 'https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js', 'async': false},
-            {'src': './js/modules/cart.js', 'async': false},
-            {'src': './js/modules/main.js', 'async': false}
+            {'src': './js/controllers/cart.js', 'async': false},
+            
+            {'src': './js/main.js', 'async': false}
         ]
     };
 
