@@ -12,7 +12,8 @@
 
             // controllers
             {'src': './js/controllers/cart.js', 'async': false},
-            {'src': './js/controllers/category.js', 'async': false},
+            {'src': './js/controllers/addToCart.js', 'async': false},
+            {'src': './js/controllers/sortingData.js', 'async': false},
 
             // aggregator
             {'src': './js/main.js', 'async': false}
