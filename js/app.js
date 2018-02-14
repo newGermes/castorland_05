@@ -1,4 +1,7 @@
 'use strict';
+//scope for aplication
+var app = {};
+
 (function() {
     var src = {
         'scripts': [

@@ -1,5 +1,5 @@
 'use strict';
-var store = (function() {
+app.store = (function() {
     var setItem = function(name, values) {
         return window.localStorage.setItem(name, JSON.stringify(value));
     };

@@ -1,5 +1,7 @@
 'use strict';
-var addToCart = (function() {
+// import shorCart from shortCart
+
+app.addToCart = (function() {
     var delegation = function(parent, child) {
         if (parent && child) {
             

@@ -2,18 +2,17 @@
 // import addToCart from addToCart
 // import sortingData from sortingData
 
-(function() {
-    var elm = {
-        body: document.body,
-        addToCart: document.querySelector('.add_to_cart'),
-        sort: document.querySelector('#sort'),
-        quantity: document.querySelector('#quantity')
-    };
+app.elm = {
+    body: document.body,
+    addToCart: document.querySelector('.add_to_cart'),
+    sort: document.querySelector('#sort'),
+    quantity: document.querySelector('#quantity'),
+    shoppingCart: document.querySelector('#shopping_cart .ajax_cart_quantity')
+};
 
-    // adding a listener to buttons in Category
-    addToCart.delegation(elm.body, elm.addToCart);
+// adding a listener to buttons in Category
+app.addToCart.delegation(app.elm.body, app.elm.addToCart);
 
-    // get data attribute value
-    sortingData.setDataFrom(elm.sort, 'sort');
-    sortingData.setDataFrom(elm.quantity, 'quantity');
-}());
+// get data attribute value
+app.sortingData.setDataFrom(app.elm.sort, 'sort');
+app.sortingData.setDataFrom(app.elm.quantity, 'quantity');

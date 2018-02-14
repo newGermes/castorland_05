@@ -1,12 +1,12 @@
 'use stirct';
 // import store from store
 
-var sortingData = (function() {
+app.sortingData = (function() {
     var setDataFrom = function(element, name) {
         if (element) {
             element.addEventListener('change', function() {
                 var value = this.options[this.selectedIndex].value;
-                store.setCookie(name, value);
+                app.store.setCookie(name, value);
             });
         }
     };
