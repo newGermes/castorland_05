@@ -5,9 +5,9 @@ app.addToCart = (function() {
     var _parser = function(element) {
         var name = element.dataset.name;
         var id = element.dataset.id;
+        var quantity = app.elm.addQuantity(id).value;
         var url = '';
         var price = 0;
-        var quantity = 0;
 
         return {
             id: id,
@@ -26,7 +26,7 @@ app.addToCart = (function() {
 
                 if (!reg.test(elm.className)) return;
 
-                console.log(_parser(elm).id);
+                console.log(_parser(elm).quantity);
             };
         }
     };

@@ -7,7 +7,10 @@ app.elm = {
     addToCart: document.querySelector('.add_to_cart'),
     sort: document.querySelector('#sort'),
     quantity: document.querySelector('#quantity'),
-    shoppingCart: document.querySelector('#shopping_cart .ajax_cart_quantity')
+    shoppingCart: document.querySelector('#shopping_cart .ajax_cart_quantity'),
+    addQuantity: function(id) {
+        return document.querySelector('#add_quantity_' + id)
+    }
 };
 
 // adding a listener to buttons in Category
