@@ -1,11 +1,12 @@
 'use strict';
-// import shorCart from shortCart
-
 app.addToCart = (function() {
+    var _getPice = function(element) {
+        console.log(element.close)
+    };
     var _parser = function(element) {
         var name = element.dataset.name;
         var id = element.dataset.id;
-        var quantity = app.elm.addQuantity(id).value;
+        var quantity = 0;   
         var url = '';
         var price = 0;
 
@@ -26,7 +27,7 @@ app.addToCart = (function() {
 
                 if (!reg.test(elm.className)) return;
 
-                console.log(_parser(elm).quantity);
+                console.log(_parser(elm));
             };
         }
     };
